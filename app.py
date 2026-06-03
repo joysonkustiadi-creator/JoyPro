@@ -44,6 +44,32 @@ st.markdown("""
     padding-top: 2rem !important;
     position: relative;
     z-index: 10;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Paksa main content selalu center */
+.main .block-container {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    float: none !important;
+}
+
+/* Reset saat sidebar terbuka */
+[data-testid="stSidebar"][aria-expanded="true"] ~ .main .block-container {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Reset saat sidebar tertutup */
+[data-testid="stSidebar"][aria-expanded="false"] ~ .main .block-container {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
 }
 
 /* ── HEADER: sembunyikan kontennya tapi BUKAN tombol sidebar ── */
