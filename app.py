@@ -45,7 +45,26 @@ st.markdown("""
     position: relative;
     z-index: 10;
 }
-header { visibility: hidden; }
+
+/* ── HEADER: sembunyikan kontennya tapi BUKAN tombol sidebar ── */
+header {
+    background: transparent !important;
+}
+header > div:first-child {
+    visibility: hidden !important;
+}
+/* Pastikan tombol sidebar tetap visible */
+header button,
+header [data-testid="stSidebarCollapsedControl"],
+header [data-testid="collapsedControl"] {
+    visibility: visible !important;
+    display: flex !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+    z-index: 999999 !important;
+    color: white !important;
+}
+
 footer { visibility: hidden; }
 
 /* Decorative shapes */
@@ -117,7 +136,6 @@ div[data-testid="stRadio"] > div {
     align-items: stretch !important;
     gap: 8px !important;
 }
-
 div[data-testid="stRadio"] > div > label {
     display: flex !important;
     align-items: center !important;
@@ -137,8 +155,6 @@ div[data-testid="stRadio"] > div > label {
     transition: background 0.22s, color 0.22s, box-shadow 0.22s !important;
     box-sizing: border-box !important;
 }
-
-/* hover */
 div[data-testid="stRadio"] > div > label:hover {
     background: rgba(0,122,255,0.15) !important;
     box-shadow:
@@ -146,8 +162,6 @@ div[data-testid="stRadio"] > div > label:hover {
         inset 4px 0 0 0 rgba(0,122,255,0.6) !important;
     color: white !important;
 }
-
-/* active */
 div[data-testid="stRadio"] > div > label:has(input:checked) {
     background: rgba(0,122,255,0.25) !important;
     box-shadow:
@@ -155,8 +169,6 @@ div[data-testid="stRadio"] > div > label:has(input:checked) {
         inset 5px 0 0 0 #007AFF !important;
     color: white !important;
 }
-
-/* hide radio dot */
 div[data-testid="stRadio"] > div > label > div:first-child {
     display: none !important;
 }
@@ -192,8 +204,6 @@ div[data-testid="stRadio"] > div > label > div:first-child {
 }
 .sb-info-val { color: #00C6FF !important; font-weight: 600; }
 
-/* ── PERBAIKAN DI SINI ── */
-/* Mengubah position ke relative dan memberikan margin atas agar fleksibel */
 .sb-footer {
     position: relative !important;
     margin-top: 40px !important;
@@ -212,7 +222,6 @@ div[data-testid="stRadio"] > div > label > div:first-child {
 
 # ── SIDEBAR CONTENT ───────────────────────────────────────────────────────────
 with st.sidebar:
-    # Logo
     st.markdown("""
         <div class="sb-logo">
             <span class="sb-logo-icon">🎓</span>
@@ -222,10 +231,8 @@ with st.sidebar:
         </div>
     """, unsafe_allow_html=True)
 
-    # Nav label
     st.markdown('<div class="sb-section">Navigation</div>', unsafe_allow_html=True)
 
-    # Nav radio
     page = st.radio(
         label="nav",
         options=["🏠   Home", "⚙️   ML Workflow"],
@@ -234,7 +241,6 @@ with st.sidebar:
 
     st.markdown('<hr class="sb-divider">', unsafe_allow_html=True)
 
-    # Info card
     st.markdown("""
         <div class="sb-info">
             <div class="sb-info-label">Model Info</div>
@@ -261,7 +267,6 @@ with st.sidebar:
         </div>
     """, unsafe_allow_html=True)
 
-    # Footer sekarang berada di alur normal dokumen, aman dari tabrakan
     st.markdown("""
         <div class="sb-footer">
             Built with Streamlit &amp; scikit-learn<br>
