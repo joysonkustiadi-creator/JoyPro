@@ -1,0 +1,23 @@
+artifact_path: file:d:/BINUS/SEMESTER 4/Machine Learning/AOL/training/mlruns/1/models/m-ec3de156497047618e1b4cf30e80433c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-ec3de156497047618e1b4cf30e80433c
+model_size_bytes: 240785
+model_uuid: m-ec3de156497047618e1b4cf30e80433c
+prompts: null
+run_id: d730e7a0bf6c472d924538999344bb02
+utc_time_created: '2026-06-09 16:48:31.943321'
