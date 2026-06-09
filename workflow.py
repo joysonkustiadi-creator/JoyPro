@@ -45,7 +45,7 @@ WORKFLOW_CSS = """
 /* Step node */
 .step-node {
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.14);
     border-radius: 20px;
@@ -145,7 +145,7 @@ WORKFLOW_CSS = """
     gap: 0;
     padding: 4px 0;
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
 }
 .arrow-line {
     width: 2px;
@@ -477,9 +477,9 @@ def render():
                 <div class="interp-chip">
                     <div class="interp-chip-title">🌊 SHAP Values</div>
                     <div class="interp-chip-desc">
-                        SHapley Additive exPlanations — menghitung kontribusi setiap fitur (kata) terhadap
-                        prediksi akhir model menggunakan teori game theory. Digunakan pada Linear SVM
-                        via <code style="color:#5AC8FA;">LinearExplainer</code>.
+                        SHAP digunakan untuk membantu memahami alasan di balik prediksi model. Metode ini menunjukkan fitur atau skill 
+                        mana yang paling berpengaruh terhadap rekomendasi karir yang dihasilkan oleh model XGBoost menggunakan 
+                        <code style="color:#5AC8FA;">TreeExplainer</code>.
                     </div>
                 </div>
                 <div class="interp-chip">
