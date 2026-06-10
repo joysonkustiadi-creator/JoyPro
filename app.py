@@ -276,7 +276,7 @@ with st.sidebar:
             </div>
             <div class="sb-info-row">
                 <span>Accuracy</span>
-                <span class="sb-info-val">95.22%</span>
+                <span class="sb-info-val">95.71%</span>
             </div>
             <div class="sb-info-row">
                 <span>Classes</span>

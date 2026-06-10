@@ -311,7 +311,7 @@ def render():
                 <span class="stat-lbl">Career Paths</span>
             </div>
             <div class="stat-card">
-                <span class="stat-num">95.22%</span>
+                <span class="stat-num">95.71%</span>
                 <span class="stat-lbl">Accuracy</span>
             </div>
             <div class="stat-card">

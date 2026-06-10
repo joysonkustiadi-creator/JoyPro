@@ -396,25 +396,25 @@ def render():
                 <tr>
                     <td><b style="color:white;">Naive Bayes</b></td>
                     <td><code style="color:#FF9F0A;font-size:0.75rem;">alpha=0.1</code></td>
-                    <td><span class="badge-pill">92.40%</span></td>
+                    <td><span class="badge-pill">92.28%</span></td>
                     <td>Cepat, baseline yang kuat</td>
                 </tr>
                 <tr>
                     <td><b style="color:white;">Logistic Regression</b></td>
                     <td><code style="color:#FF9F0A;font-size:0.75rem;">C=5, max_iter=1000</code></td>
-                    <td><span class="badge-pill">94.85%</span></td>
+                    <td><span class="badge-pill">94.73%</span></td>
                     <td>Akurasi tinggi, interpretable</td>
                 </tr>
                 <tr>
                     <td><b style="color:white;">Linear SVM</b></td>
                     <td><code style="color:#FF9F0A;font-size:0.75rem;">C=1.0, max_iter=2000</code></td>
-                    <td><span class="badge-pill">94.36%</span></td>
+                    <td><span class="badge-pill">94.12%</span></td>
                     <td>Robust terhadap high-dim data</td>
                 </tr>
                 <tr>
                     <td><b style="color:white;">XGBoost</b></td>
                     <td><code style="color:#FF9F0A;font-size:0.75rem;">n_est=300, depth=6, lr=0.1</code></td>
-                    <td><span class="badge-pill green">95.22%</span></td>
+                    <td><span class="badge-pill green">95.71%</span></td>
                     <td>Akurasi tertinggi, ensemble model</td>
                 </tr>
             </table>
@@ -437,22 +437,22 @@ def render():
                 <div class="metric-card">
                     <div class="metric-name">🎯 Accuracy</div>
                     <div class="metric-def">Proporsi prediksi benar dari total prediksi keseluruhan.</div>
-                    <div class="metric-val" style="color:#00C6FF;">95.22%</div>
+                    <div class="metric-val" style="color:#00C6FF;">95.71%</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-name">🔍 Precision</div>
                     <div class="metric-def">Dari semua yang diprediksi kelas X, berapa yang benar-benar kelas X.</div>
-                    <div class="metric-val" style="color:#30D158;">96.06%</div>
+                    <div class="metric-val" style="color:#30D158;">96.53%</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-name">📡 Recall</div>
                     <div class="metric-def">Dari semua data kelas X, berapa yang berhasil terdeteksi.</div>
-                    <div class="metric-val" style="color:#FF9F0A;">95.49%</div>
+                    <div class="metric-val" style="color:#FF9F0A;">95.94%</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-name">⚖️ Macro F1-Score</div>
                     <div class="metric-def">Rata-rata F1 per kelas tanpa mempertimbangkan ketidakseimbangan data.</div>
-                    <div class="metric-val" style="color:#BF5AF2;">95.74%</div>
+                    <div class="metric-val" style="color:#BF5AF2;">96.20%</div>
                 </div>
             </div>
             <div class="step-desc">
@@ -519,7 +519,7 @@ def render():
                 &nbsp;→&nbsp; TF-IDF (5K features)
                 &nbsp;→&nbsp; Split 80:20
                 &nbsp;→&nbsp; 4 Models Trained
-                &nbsp;→&nbsp; Best: <span style="color:#30D158; font-weight:700;">XGBoost 95.22%</span>
+                &nbsp;→&nbsp; Best: <span style="color:#30D158; font-weight:700;">XGBoost 95.71%</span>
                 &nbsp;→&nbsp; SHAP + Top Words
             </div>
         </div>
