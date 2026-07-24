@@ -3,7 +3,7 @@
 Aplikasi prediksi minat karier mahasiswa Computer Science berbasis Machine Learning.
 
 ## App
-[https://joypro-hasfibpucy6eco95efs9bd.streamlit.app/](https://cs-career-predictor.streamlit.app/)
+[https://cs-career-predictor.streamlit.app/](https://cs-career-predictor.streamlit.app/)
 
 ## Model
 - Algorithm: XGBoost
