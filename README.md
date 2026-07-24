@@ -1,9 +1,9 @@
-# Career AI — CS Career Prediction
+# Career AI (CS Career Prediction)
 
 Aplikasi prediksi minat karier mahasiswa Computer Science berbasis Machine Learning.
 
 ## App
-https://joypro-hasfibpucy6eco95efs9bd.streamlit.app/
+[https://joypro-hasfibpucy6eco95efs9bd.streamlit.app/](https://cs-career-predictor.streamlit.app/)
 
 ## Model
 - Algorithm: XGBoost
